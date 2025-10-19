@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Rooms</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="user">
+                <input
+                    type="text"
+                    name="room_id_input"
+                    placeholder="Room ID (opcional)"
+                />
+
+                <input type="text" name="username" placeholder="username" />
+                <input
+                    type="text"
+                    name="content"
+                    placeholder="your message here"
+                />
+
+                <button onclick="send_message()">send</button>
+                <button onclick="create_room()">new room</button>
+                <button onclick="join_room_by_id()">join room</button>
+
+                <p id="current-room-id" style="color: green; margin-top: 10px">
+                    Room: N/A
+                </p>
+            </div>
+            <div class="room"></div>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

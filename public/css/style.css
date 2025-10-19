@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.user {
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid green;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.room {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+
+    border: 2px solid green;
+    color: grey;
+    padding: 10px;
+
+    overflow-y: auto;
+    word-break: break-word;
+}
+
+.room div {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    background-color: black;
+    border: 2px solid green;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid darkgreen;
+}
+
+button {
+    background-color: black;
+    border: 2px solid green;
+    padding: 10px;
+    color: grey;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003300;
+}
+
+p#current-room-id {
+    word-break: break-all;
+    text-align: center;
+}
