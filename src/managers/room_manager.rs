@@ -77,7 +77,7 @@ impl RoomManager {
             .ok_or(RoomError::RoomNotExists)
     }
 
-    pub fn delete_user(
+    pub fn delete_user_from_room(
         &mut self,
         room_id: Uuid,
         user_id: Uuid,
